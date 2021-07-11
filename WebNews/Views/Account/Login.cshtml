@@ -58,7 +58,7 @@
     <div class="col-md-4">
         <section id="socialLoginForm">
             @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-            <script>
+            @*<script>
 
                 // [1] Load lên các thành phần cần thiết
                 window.fbAsyncInit = function () {
@@ -111,15 +111,17 @@
                     });
                 }
 
-            </script>
-            @*<div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input id="btb" type="button" value="ĐĂNG NHẬP" onclick="RequestLoginFB()" style="display:none" />
-                <p id="lbl" style="display:none">BẠN ĐÃ ĐĂNG NHẬP THÀNH CÔNG!</p>
+            </script>*@
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    @*<input id="btb" type="button" value="ĐĂNG NHẬP" onclick="RequestLoginFB()" style="display:none" />
+                        <p id="lbl" style="display:none">BẠN ĐÃ ĐĂNG NHẬP THÀNH CÔNG!</p>*@
 
+                    <a href="https://www.facebook.com/dialog/oauth?client_id=1207108613061436&redirect_uri=http://localhost:44363/callback.aspx">Login</a>
+
+                </div>
             </div>
-        </div>*@
-            <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" onclick="RequestLoginFB()" ></div>
+            @*<div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" onclick="RequestLoginFB()" ></div>*@
         </section>
     </div>
 </div>

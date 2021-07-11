@@ -231,7 +231,7 @@ a {
 }
 
     a:hover {
-        color: #fff
+        color: #fc3f00
     }
 
     a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
@@ -239,7 +239,7 @@ a {
     }
 
 a, button {
-    color: #fff;
+    color: #000;
     outline: medium none
 }
 
@@ -2551,7 +2551,7 @@ hr {
 }
 
 .header-area .header-mid .header-banner img {
-    width: 70%
+    width: 100%
 }
 
 .header-area .header-bottom {
