@@ -1,0 +1,59 @@
+﻿@model WebNews.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostImg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostUrl)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PostId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
